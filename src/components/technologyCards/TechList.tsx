@@ -17,13 +17,20 @@ const TechList = ({ TechListPromise }: TechListProps) => {
     // console.log(TechList,'TechList')
     const [buttonType, setbuttonType] = useState("avilable")
     // console.log(buttonType);
+const handleUpdateBtnType =(type)=>{
+setbuttonType(type);
+
+}
+
 
     return (
         <><div className="container mx-auto">
             <div className="flex justify-between gap-4 mb-2">
                 <h2 className="font-bold text-xl"></h2>
                 <div>
-                    <button className={`btn btn-success ${buttonType === 'available' ? 'btn-success' : ''}`}>Available</button>
+                    <button 
+                    onClick={()=>handleUpdateBtnType(available)}
+                    className={`btn btn-success ${buttonType === 'available' ? 'btn-success' : ''}`}>Available</button>
                     {/* <button className={`btn btn-success ${buttonType==='selected'?'btn-success':''}`}>Seleted</button> */}
                 </div>
             </div>

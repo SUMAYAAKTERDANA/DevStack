@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import Section from './components/Section';
 import AvailableTech from './components/technologyCards/AvailableTech';
 import type { ItechList } from './types/Techlisttypes';
+import Footer from './components/Footer';
 
 function App() {
   const [techData, setTechData] = useState<ItechList[]>([]);
@@ -31,7 +32,7 @@ function App() {
         <AvailableTech TechList={techData} />
       )}
 
-
+<Footer/>
     </>
   );
 }
