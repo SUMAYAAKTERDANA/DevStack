@@ -6,7 +6,7 @@ const Section = () => {
     <section className="max-w-7xl mx-auto px-4 py-12 md:py-20
                         flex flex-col md:flex-row items-center gap-10">
 
-      
+
       <div className="w-full md:w-1/2">
         <h1 className="text-4xl md:text-5xl font-bold">
           Build Your Ideal <br />
@@ -32,7 +32,7 @@ const Section = () => {
         </div>
       </div>
 
-      
+
       <div className="w-full md:w-1/2 flex justify-center">
         <img
           src={banner}
