@@ -1,8 +1,8 @@
 
 Name of my project: DevStack 
 
-Description:
 
+Description:
 DevStack is a modern web application that allows developers to curate their own personalized technology stack. Users can browse through various tools and technologies (like React, Node.js, Docker, etc.), filter them, and add them to their personal "Stack". It provides a seamless and interactive way to organize the tools needed for a specific project, complete with real-time toast notifications and a beautiful user interface.
 
  Technology that i use:
@@ -21,7 +21,7 @@ This project is built using the following technologies:
 2.  **Real-time Feedback (Toast Alerts):Integrated `react-toastify` provides instant visual feedback for every action — whether a user successfully adds a tool, tries to add a duplicate, removes an item, or clears the stack.
 3.  **Fully Responsive & Modern UI: Built with Tailwind CSS and DaisyUI, the application features a sleek design, a custom gradient brand theme, and a layout that adapts perfectly to mobile, tablet, and desktop screens.
 
----
+
 
 #  React Concept Questions 
 

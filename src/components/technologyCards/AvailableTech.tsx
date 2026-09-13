@@ -1,9 +1,7 @@
-import type {
-  Dispatch,
-  SetStateAction,
-} from "react";
+import type { Dispatch, SetStateAction,} from "react";
 
 import type { ItechList } from "../../types/Techlisttypes";
+
 import { toast } from "react-toastify";
 
 type Props = {
@@ -12,11 +10,7 @@ type Props = {
   setStack: Dispatch<SetStateAction<ItechList[]>>;
 };
 
-const AvailableTech = ({
-  TechList,
-  stack,
-  setStack,
-}: Props) => {
+const AvailableTech = ({TechList, stack,setStack,}: Props) => {
 
  
   const addToStack = (tech: ItechList) => {
@@ -37,8 +31,7 @@ const AvailableTech = ({
     
     setStack((previousStack) => [
       ...previousStack,
-      tech,
-    ]);
+      tech,]);
 
   
     toast.success(
