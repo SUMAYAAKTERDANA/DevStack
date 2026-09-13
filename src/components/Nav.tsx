@@ -4,32 +4,37 @@ const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-
-       
-        <button className="md:hidden text-2xl">
+        
+        
+        <button className="md:hidden text-2xl text-gray-700">
           ☰
         </button>
 
+        
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Dev Stack" className="w-10" />
-          <span className="font-bold text-xl hidden sm:block">
-            Dev Stack
-          </span>
+          
+          <img src={logo} alt="Dev Stack" className="h-8 auto" />
+
+         
+         
         </div>
 
-       
-        <ul className="hidden md:flex gap-5 items-center">
-          <li>Home</li>
-          <li>Technologies</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+         
+        <ul className="hidden md:flex gap-6 items-center text-sm font-medium">
+          <li className="text-[#E94D8B] cursor-pointer">Home</li>
+          <li className="text-gray-600 hover:text-gray-900 cursor-pointer">Technologies</li>
+          <li className="text-gray-600 hover:text-gray-900 cursor-pointer">Projects</li>
+          <li className="text-gray-600 hover:text-gray-900 cursor-pointer">About</li>
+          <li className="text-gray-600 hover:text-gray-900 cursor-pointer">Contact</li>
         </ul>
 
-        <div className="flex gap-2 items-center">
-          <span>Sign In</span>
+       
+        <div className="flex gap-4 items-center text-sm">
+          <span className="text-gray-700 font-medium cursor-pointer hover:text-gray-900">
+            Sign In
+          </span>
 
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-full">
+          <button className="bg-[#E94D8B] hover:bg-[#d63f78] text-white px-5 py-2 rounded-full font-medium transition-colors">
             Sign Up
           </button>
         </div>
