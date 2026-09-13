@@ -6,19 +6,9 @@ import Footer from "./components/Footer";
 import type { ItechList } from "./types/Techlisttypes";
 import "react-toastify/dist/ReactToastify.css";
 
-// Promise
-// const TechListPromise: Promise<ItechList[]> = fetch("/data.json").then(
-//   (res) => res.json()
-// );
-const TechListPromise: Promise<ItechList[]> = new Promise(
-  (resolve, reject) => {
-    setTimeout(() => {
-      fetch("/data.json")
-        .then((res) => res.json())
-        .then(resolve)
-        .catch(reject);
-    }, 2000);
-  }
+Promise
+const TechListPromise: Promise<ItechList[]> = fetch("/data.json").then(
+  (res) => res.json()
 );
 
 
